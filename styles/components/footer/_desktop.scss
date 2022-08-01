@@ -1,0 +1,43 @@
+footer {
+  font-family: $main-txt-font;
+  color: $main-txt-color;
+  border-top: 1px solid $border-color;
+  .footer-flex-container {
+    width: 100%;
+    padding: 48px 154px;
+
+    .footer-inner-logo-container {
+      margin-bottom: 24px;
+      img {
+        width: 64.18px;
+        height: 56px;
+        margin-right: 20px;
+      }
+
+      h2 {
+        font-size: 12px;
+        line-height: 20.4px;
+        font-weight: bold;
+      }
+    }
+
+    h3 {
+      font-size: 12px;
+      line-height: 20.4px;
+      font-weight: normal;
+      opacity: 50%;
+    }
+  }
+
+  .footer-contact-container {
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+      opacity: 70%;
+
+      &:not(:last-child) {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
