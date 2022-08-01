@@ -151,6 +151,14 @@ table {
   font-family: HelveticaNeue-bold;
   src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 77\ Bd\ Cn\ Obl/bold.ttf);
 }
+@font-face {
+  font-family: HelveticaNeue-heavy;
+  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 87\ Hv\ Cn\ Obl/heavy.ttf);
+}
+@font-face {
+  font-family: HelveticaNeue-heavier;
+  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ NeueLTW0693BlkExtObl/hevier);
+}
 header {
   width: 100%;
   height: 95px;
@@ -208,6 +216,64 @@ header nav .sign-buttons .signup {
 header nav .sign-buttons .signin {
   border: 1.5px solid black;
   border-radius: 4px;
+}
+
+.hero-content {
+  width: 100%;
+  height: 456px;
+  background-color: gray;
+}
+
+main {
+  padding: 98px 269px 46px 269px;
+  border: 2px solid red;
+  width: 100%;
+  font-family: HelveticaNeue;
+  color: #000000;
+}
+main h1 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+main .elections-main-container {
+  padding: 52px 252px 52px 0;
+}
+main .elections-main-container:not(:last-child) {
+  border-bottom: 1px solid #dee1e3;
+}
+main .elections-main-container h3 {
+  font-size: 14px;
+  opacity: 70%;
+  margin-bottom: 18px;
+}
+main .elections-main-container h2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+main .elections-main-container p {
+  font-size: 14px;
+  line-height: 23.8px;
+  opacity: 70%;
+  margin-bottom: 40px;
+}
+main .elections-main-container button {
+  padding: 16px 36px;
+  cursor: pointer;
+  border: 1.5px solid black;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14.65px;
+  font-weight: bold;
+  font-family: HelveticaNeue;
+  letter-spacing: 0.7px;
+  border-radius: 4px;
+}
+main .elections-main-container button:hover {
+  background-color: #ffe86e;
 }
 
 /*# sourceMappingURL=index.css.map */
