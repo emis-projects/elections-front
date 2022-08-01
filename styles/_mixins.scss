@@ -1,1 +1,13 @@
-{\rtf1}
+$main-txt-font: HelveticaNeue;
+
+@mixin font($size, $lHeight, $color, $lSpacing: normal) {
+  font-size: $size;
+  line-height: $lHeight;
+  color: $color;
+  letter-spacing: $lSpacing;
+}
+
+@mixin family($family, $weight: 400) {
+  font-family: $family;
+  font-weight: $weight;
+}
