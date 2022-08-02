@@ -3,6 +3,8 @@ header {
   height: 95px;
   border: 1px solid $border-color;
   padding: 31.5px 154px;
+  color: $main-txt-color;
+  font-family: $main-txt-font;
 
   nav {
     ul {
@@ -62,6 +64,86 @@ header {
       .signin {
         border: 1.5px solid black;
         border-radius: 4px;
+      }
+    }
+
+    .header-user-container-popup-wrapper {
+      display: none;
+      padding: 20px;
+      background-color: #fff;
+      border: 2px solid transparent;
+      margin-top: -23px;
+      .header-user-container {
+        .user-img-wrapper {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: $user-photo-color;
+          position: relative;
+          margin-right: 12px;
+          cursor: pointer;
+
+          h1 {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+
+        .user-info-wrapper {
+          margin-right: 33px;
+          h1 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 6px;
+          }
+
+          h2 {
+            font-size: 14px;
+            line-height: 14.32px;
+            opacity: 50%;
+          }
+        }
+
+        svg {
+          margin-top: 11px;
+          cursor: pointer;
+        }
+      }
+
+      .header-user-popup {
+        padding-left: 10px;
+        display: none;
+        .user-popup-data {
+          margin-top: 34.5px;
+          margin-bottom: 20px;
+
+          a {
+            text-decoration: none;
+            color: $main-txt-color;
+            font-family: $main-txt-font;
+            font-size: 16px;
+            line-height: 21px;
+          }
+
+          svg {
+            margin-right: 12.17px;
+          }
+        }
+        .user-popup-logout {
+          a {
+            text-decoration: none;
+            color: $main-txt-color;
+            font-size: 16px;
+            line-height: 21px;
+          }
+          svg {
+            margin-right: 11px;
+          }
+        }
       }
     }
   }

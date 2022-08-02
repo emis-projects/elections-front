@@ -10,6 +10,6 @@ popupArror.addEventListener("click", () => {
     popupContainer.style.border = "2px solid black";
   } else {
     userPopup.style.display = "none";
-    popupContainer.style.border = "none";
+    popupContainer.style.border = "2px solid transparent";
   }
 });

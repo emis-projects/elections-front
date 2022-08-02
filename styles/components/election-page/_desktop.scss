@@ -1,0 +1,80 @@
+.election-main {
+  font-family: $main-txt-font;
+  margin-bottom: 50px;
+  .back-button {
+    text-decoration: none;
+    color: $main-txt-color;
+    margin-bottom: 42px;
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 23.8px;
+    opacity: 70%;
+    width: 77%;
+    margin-bottom: 64px;
+  }
+
+  .election-question-answer {
+    .question-container {
+      margin-bottom: 64px;
+      .question-numbering {
+        margin-bottom: 16px;
+        .slash {
+          opacity: 30%;
+        }
+
+        .election-all-questions-number {
+          opacity: 30%;
+        }
+      }
+
+      .election-question {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
+
+      .choose-answer {
+        font-size: 12px;
+        line-height: 20.4px;
+        opacity: 50%;
+        margin-bottom: 48px;
+      }
+
+      input {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  button {
+    width: 100%;
+    height: 63px;
+    border-radius: 4px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+
+    span {
+      font-size: 14px;
+      line-height: 17.09px;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: $button-hover-yellow;
+    }
+  }
+}
