@@ -79,7 +79,7 @@ main {
     }
 
     .active {
-      color: #7541ee;
+      color: $pagination-active;
       border-bottom: 1px solid $pagination-active;
     }
   }
