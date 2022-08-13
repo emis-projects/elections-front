@@ -2,47 +2,59 @@ header {
   width: 100%;
   height: 95px;
   border: 1px solid $border-color;
-  padding: 31.5px 154px;
+  padding: 2.1% 10.6%;
   color: $main-txt-color;
   font-family: $main-txt-font;
 
   nav {
-    ul {
-      height: 32px;
-      align-items: center;
-
-      li {
-        margin-right: 60px;
+    .navbar {
+      width: 100%;
+      .logo-wrapper {
+        height: 32px;
+        color: $e-stories-color;
 
         a {
           text-decoration: none;
           color: $main-txt-color;
           font-family: $main-txt-font;
           font-size: 14px;
+
+          .parent-svg {
+            width: fit-content;
+            position: relative;
+            margin-right: 8px;
+          }
+
+          .child-svg {
+            position: absolute;
+            width: fit-content;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .logo-txt {
+            span {
+              font-family: $main-txt-font;
+              font-weight: bold;
+            }
+          }
         }
       }
     }
-    .e-stories {
-      color: $e-stories-color;
 
-      .parent-svg {
-        width: fit-content;
-        position: absolute;
-        top: 31.5px;
-      }
-
-      .child-svg {
-        width: fit-content;
-        position: relative;
-        top: 0;
-        left: 8px;
-      }
-
-      span {
-        margin-left: 20px;
-        margin-top: 2px;
-        font-family: $main-txt-font;
-        font-weight: bold;
+    .navbar-list {
+      li {
+        list-style: none;
+        &:not(:last-child) {
+          margin-right: 48px;
+        }
+        a {
+          font-size: 14px;
+          line-height: 16.7px;
+          color: black;
+          text-decoration: none;
+        }
       }
     }
 

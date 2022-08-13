@@ -1,6 +1,7 @@
 .election-main {
   font-family: $main-txt-font;
   margin-bottom: 50px;
+
   .back-button {
     text-decoration: none;
     color: $main-txt-color;
@@ -22,7 +23,6 @@
     font-size: 14px;
     line-height: 23.8px;
     opacity: 70%;
-    width: 77%;
     margin-bottom: 64px;
   }
 
@@ -65,6 +65,7 @@
     margin-top: 40px;
     cursor: pointer;
     border: 2px solid black;
+    background-color: #fff;
 
     span {
       font-size: 14px;

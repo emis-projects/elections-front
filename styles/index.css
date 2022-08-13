@@ -155,6 +155,14 @@ table {
   display: block;
 }
 
+.weight500 {
+  font-weight: 700;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
 @font-face {
   font-family: HelveticaNeue;
   src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/medium.ttf);
@@ -175,42 +183,50 @@ header {
   width: 100%;
   height: 95px;
   border: 1px solid #dee1e3;
-  padding: 31.5px 154px;
+  padding: 2.1% 10.6%;
   color: #000000;
   font-family: HelveticaNeue;
 }
-header nav ul {
+header nav .navbar {
+  width: 100%;
+}
+header nav .navbar .logo-wrapper {
   height: 32px;
-  align-items: center;
+  color: #08092b;
 }
-header nav ul li {
-  margin-right: 60px;
-}
-header nav ul li a {
+header nav .navbar .logo-wrapper a {
   text-decoration: none;
   color: #000000;
   font-family: HelveticaNeue;
   font-size: 14px;
 }
-header nav .e-stories {
-  color: #08092b;
-}
-header nav .e-stories .parent-svg {
-  width: fit-content;
-  position: absolute;
-  top: 31.5px;
-}
-header nav .e-stories .child-svg {
+header nav .navbar .logo-wrapper a .parent-svg {
   width: fit-content;
   position: relative;
-  top: 0;
-  left: 8px;
+  margin-right: 8px;
 }
-header nav .e-stories span {
-  margin-left: 20px;
-  margin-top: 2px;
+header nav .navbar .logo-wrapper a .child-svg {
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header nav .navbar .logo-wrapper a .logo-txt span {
   font-family: HelveticaNeue;
   font-weight: bold;
+}
+header nav .navbar-list li {
+  list-style: none;
+}
+header nav .navbar-list li:not(:last-child) {
+  margin-right: 48px;
+}
+header nav .navbar-list li a {
+  font-size: 14px;
+  line-height: 16.7px;
+  color: black;
+  text-decoration: none;
 }
 header nav .sign-buttons {
   display: none;
@@ -307,7 +323,7 @@ header nav .header-user-container-popup-wrapper .header-user-popup .user-popup-l
 }
 
 main {
-  padding: 98px 269px 46px 269px;
+  padding: 6.8% 18% 3.1% 18%;
   width: 100%;
   font-family: HelveticaNeue;
   color: #000000;
@@ -341,10 +357,11 @@ main .elections-main-container p {
   opacity: 70%;
   margin-bottom: 40px;
 }
-main .elections-main-container button {
+main .elections-main-container a button {
   padding: 16px 36px;
   cursor: pointer;
   border: 1.5px solid black;
+  background-color: white;
   display: inline-block;
   font-size: 12px;
   line-height: 14.65px;
@@ -353,7 +370,7 @@ main .elections-main-container button {
   letter-spacing: 0.7px;
   border-radius: 4px;
 }
-main .elections-main-container button:hover {
+main .elections-main-container a button:hover {
   background-color: #ffe86e;
 }
 
@@ -378,6 +395,7 @@ footer .footer-flex-container .footer-inner-logo-container h2 {
   font-size: 12px;
   line-height: 20.4px;
   font-weight: bold;
+  margin-top: 5px;
 }
 footer .footer-flex-container h3 {
   font-size: 12px;
@@ -416,7 +434,6 @@ footer .footer-contact-container p:not(:last-child) {
   font-size: 14px;
   line-height: 23.8px;
   opacity: 70%;
-  width: 77%;
   margin-bottom: 64px;
 }
 .election-main .election-question-answer .question-container {
@@ -452,6 +469,7 @@ footer .footer-contact-container p:not(:last-child) {
   margin-top: 40px;
   cursor: pointer;
   border: 2px solid black;
+  background-color: #fff;
 }
 .election-main button span {
   font-size: 14px;
