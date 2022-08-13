@@ -62,4 +62,25 @@ main {
       }
     }
   }
+
+  .pagination {
+    width: 100%;
+    height: 136px;
+    justify-content: center;
+    margin-top: 80px;
+    .pagination-child {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    .active {
+      color: #7541ee;
+      border-bottom: 1px solid $pagination-active;
+    }
+  }
 }
