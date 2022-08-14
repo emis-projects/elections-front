@@ -199,22 +199,27 @@ header nav .navbar .logo-wrapper a {
   color: #000000;
   font-family: HelveticaNeue;
   font-size: 14px;
+  align-items: center;
 }
 header nav .navbar .logo-wrapper a .parent-svg {
   width: fit-content;
   position: relative;
   margin-right: 8px;
+  border: 2px solid black;
+  border-radius: 9px;
+  background-color: #ffe86e;
 }
-header nav .navbar .logo-wrapper a .child-svg {
+header nav .navbar .logo-wrapper a .parent-svg .child-svg {
   position: absolute;
   width: fit-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header nav .navbar .logo-wrapper a .logo-txt span {
-  font-family: HelveticaNeue;
-  font-weight: bold;
+header nav .navbar .logo-wrapper a .logo-txt {
+  font-size: 16px;
+  margin-top: -3px;
+  line-height: 18px;
 }
 header nav .navbar-list li {
   list-style: none;

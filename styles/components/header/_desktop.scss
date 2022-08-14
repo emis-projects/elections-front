@@ -18,26 +18,28 @@ header {
           color: $main-txt-color;
           font-family: $main-txt-font;
           font-size: 14px;
+          align-items: center;
 
           .parent-svg {
             width: fit-content;
             position: relative;
             margin-right: 8px;
-          }
-
-          .child-svg {
-            position: absolute;
-            width: fit-content;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            border: 2px solid black;
+            border-radius: 9px;
+            background-color: $logo-bg;
+            .child-svg {
+              position: absolute;
+              width: fit-content;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
 
           .logo-txt {
-            span {
-              font-family: $main-txt-font;
-              font-weight: bold;
-            }
+            font-size: 16px;
+            margin-top: -3px;
+            line-height: 18px;
           }
         }
       }
