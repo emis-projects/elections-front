@@ -78,9 +78,13 @@ main {
       margin-right: 15px;
     }
 
-    .active {
-      color: $pagination-active;
-      border-bottom: 1px solid $pagination-active;
+    .pagination-num {
+      transition: 2s;
+      &:hover {
+        transition: 2s;
+        color: $pagination-hover;
+        border-bottom: 1px solid $pagination-hover;
+      }
     }
   }
 }

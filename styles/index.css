@@ -388,7 +388,11 @@ main .pagination .pagination-child {
   cursor: pointer;
   margin-right: 15px;
 }
-main .pagination .active {
+main .pagination .pagination-num {
+  transition: 2s;
+}
+main .pagination .pagination-num:hover {
+  transition: 2s;
   color: #7541ee;
   border-bottom: 1px solid #7541ee;
 }
