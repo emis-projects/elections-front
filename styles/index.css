@@ -476,10 +476,44 @@ footer .footer-contact-container p:not(:last-child) {
   font-size: 12px;
   line-height: 20.4px;
   opacity: 50%;
+  margin-bottom: 16px;
+}
+.election-main .election-question-answer .question-container .error-message {
+  color: #fb5353;
+  font-weight: 500;
   margin-bottom: 48px;
+  display: block;
 }
 .election-main .election-question-answer .question-container input {
   margin-bottom: 24px;
+}
+.election-main .voting-success-popup {
+  width: 600px;
+  height: 84px;
+  padding: 24px;
+  background-color: black;
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.election-main .voting-success-popup .voting-success-txt {
+  align-items: center;
+}
+.election-main .voting-success-popup .voting-success-txt svg {
+  margin-right: 18px;
+}
+.election-main .voting-success-popup .voting-success-txt h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  color: #fff;
+}
+.election-main .voting-success-popup .voting-success-message-x {
+  cursor: pointer;
 }
 .election-main button {
   width: 100%;

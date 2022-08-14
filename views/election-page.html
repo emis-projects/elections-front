@@ -72,6 +72,7 @@
           </div>
           <h2 class="election-question">უნდა იღებდნენ თუ არა თვითმმართველობის არჩევნებში მონაწილეობას დაწყებითი საფეხურის მოსწავლეები?</h2>
           <h4 class="choose-answer">აირჩიე ერთი პასუხი</h4>
+          <h3 class="error-message">შენ არ დაგიფიქსირებია პასუხი მოცემულ კითხვაზე. ხმის მისაცემად აუცილებელია ყველა კითხვაზე პასუხი.</h3>
           <label>
             <input type="radio" name="question1" value="უნდა იღებდნენ" />
             <span>უნდა იღებდნენ</span>
@@ -100,6 +101,7 @@
           </div>
           <h2 class="election-question">რა ვადით უნდა ირჩევდნენ სკოლის მოსწავლეები თვითმმართველობის წევრებს?</h2>
           <h4 class="choose-answer">აირჩიე ერთი ან მეტი პასუხი</h4>
+          <h3 class="error-message">შენ არ დაგიფიქსირებია პასუხი მოცემულ კითხვაზე. ხმის მისაცემად აუცილებელია ყველა კითხვაზე პასუხი.</h3>
           <label>
             <input type="checkbox" name="question2" id="" />
             1 წლით
@@ -121,7 +123,25 @@
           </label>
         </div>
 
-        <button type="submit">
+        <div class="voting-success-popup">
+          <div class="voting-success-txt flex">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="18" fill="#00BE82" />
+              <path
+                d="M13.7071 17.2929C13.3166 16.9024 12.6834 16.9024 12.2929 17.2929C11.9024 17.6835 11.9024 18.3166 12.2929 18.7071L13.7071 17.2929ZM16.5355 21.5356L15.8284 22.2427C16.016 22.4302 16.2703 22.5356 16.5355 22.5356C16.8008 22.5356 17.0551 22.4302 17.2427 22.2427L16.5355 21.5356ZM24.3134 15.1716C24.7039 14.781 24.7038 14.1479 24.3133 13.7574C23.9228 13.3668 23.2896 13.3669 22.8991 13.7574L24.3134 15.1716ZM12.2929 18.7071L15.8284 22.2427L17.2426 20.8285L13.7071 17.2929L12.2929 18.7071ZM17.2427 22.2427L24.3134 15.1716L22.8991 13.7574L15.8284 20.8285L17.2427 22.2427Z"
+                fill="white"
+              />
+            </svg>
+            <h5>შენი ხმა დაფიქსირებულია</h5>
+          </div>
+          <div class="voting-success-message-x">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.6666 10.6667L1.33325 1.33337M10.6666 1.33337L1.33325 10.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+
+        <button id="votingEndBtn" type="button">
           <span>დასრულება</span>
           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -241,5 +261,6 @@
     <script src="../javascript/about-project.js"></script>
     <script src="../javascript/main.js"></script>
     <script src="../javascript/election.js"></script>
+    <script src="../javascript/validators.js"></script>
   </body>
 </html>
