@@ -94,6 +94,25 @@
       cursor: pointer;
     }
   }
+  .same-user-error-message {
+    width: 100%;
+    height: 108px;
+    background-color: $error-popup-bg;
+    margin-top: 20px;
+    padding: 36px;
+    align-items: center;
+
+    svg {
+      margin-right: 16px;
+    }
+
+    h5 {
+      font-size: 16px;
+      line-height: 27.2px;
+      color: $main-txt-color;
+      display: block;
+    }
+  }
 
   button {
     width: 100%;
