@@ -502,10 +502,11 @@ footer .footer-contact-container p:not(:last-child) {
 
 .about-project-container {
   width: 100%;
-  height: max-content;
+  height: 100%;
   padding-top: 112px;
-  padding-bottom: 1100px;
-  position: absolute;
+  padding-bottom: 200px;
+  position: fixed;
+  overflow: auto;
   top: 0;
   left: 0;
   display: flex;
