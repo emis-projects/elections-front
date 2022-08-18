@@ -179,7 +179,7 @@
           </label>
         </div>
 
-        <button id="votingEndBtn" type="button">
+        <button id="votingEndBtn" type="submit">
           <span>დასრულება</span>
           <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -334,6 +334,10 @@
       console.log(DeviceID);
       const deviceIdInput = document.getElementById("device_id");
       deviceIdInput.value = DeviceID;
+      const electionForm = document.querySelector(".election-question-answer");
+      electionForm.addEventListener("submit", e => {
+        electionForm.device_id.value = DeviceID;
+      });
     </script>
 
     <!-- script tags -->
