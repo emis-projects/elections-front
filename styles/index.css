@@ -496,6 +496,37 @@ footer .footer-contact-container p:not(:last-child) {
 .election-main .election-question-answer .question-container input {
   margin-bottom: 24px;
 }
+.election-main .election-question-answer .question-container .checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.election-main .election-question-answer .question-container .checkbox input {
+  display: none;
+}
+.election-main .election-question-answer .question-container .checkbox input:checked + .checkbox_custom {
+  background-color: #7541ee;
+}
+.election-main .election-question-answer .question-container .checkbox_custom {
+  display: flex;
+  margin-right: 18px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid #bfc5c9;
+  border-radius: 4px;
+  position: relative;
+}
+.election-main .election-question-answer .question-container .checkbox_custom svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.election-main .election-question-answer .question-container .checkbox_text {
+  display: flex;
+}
 .election-main .voting-success-popup {
   width: 600px;
   height: 84px;
