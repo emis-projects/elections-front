@@ -1,0 +1,17 @@
+@media screen and (max-width: $tablet) {
+  main {
+    padding: 52px 13% 3.1% 13%;
+
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    .elections-main-container {
+      a {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
