@@ -1,0 +1,19 @@
+@media screen and (max-width: $tablet) {
+  header {
+    nav {
+      .navbar-list {
+        li {
+          .elections {
+            display: none;
+          }
+          .about-project {
+            display: none;
+          }
+          svg {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
