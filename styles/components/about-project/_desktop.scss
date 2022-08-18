@@ -14,14 +14,15 @@
   display: none;
   .about-project-child-container {
     width: 1030px;
-    height: 1280px;
+    max-width: 85%;
+    height: fit-content;
     background-color: #fff;
     padding: 4.4%;
     position: relative;
     .about-project-container-close-x {
       position: absolute;
-      right: 73.33px;
-      top: 73.33px;
+      right: 5%;
+      top: 4%;
       cursor: pointer;
     }
 

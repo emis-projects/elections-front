@@ -733,15 +733,16 @@ footer .footer-contact-container p:not(:last-child) {
 }
 .about-project-container .about-project-child-container {
   width: 1030px;
-  height: 1280px;
+  max-width: 85%;
+  height: fit-content;
   background-color: #fff;
   padding: 4.4%;
   position: relative;
 }
 .about-project-container .about-project-child-container .about-project-container-close-x {
   position: absolute;
-  right: 73.33px;
-  top: 73.33px;
+  right: 5%;
+  top: 4%;
   cursor: pointer;
 }
 .about-project-container .about-project-child-container h1 {
@@ -783,6 +784,17 @@ footer .footer-contact-container p:not(:last-child) {
   letter-spacing: 0.2px;
   color: #4d4d4d;
   font-weight: 300;
+}
+
+@media screen and (max-width: 767px) {
+  .about-project-container .about-project-child-container .about-project-container-close-x {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .about-project-container .about-project-squad-child-container {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

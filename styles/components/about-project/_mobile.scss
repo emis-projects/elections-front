@@ -1,0 +1,14 @@
+@media screen and (max-width: $tablet) {
+  .about-project-container {
+    .about-project-child-container {
+      .about-project-container-close-x {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+      }
+    }
+    .about-project-squad-child-container {
+      display: block;
+    }
+  }
+}
