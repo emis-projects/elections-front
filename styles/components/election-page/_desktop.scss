@@ -64,6 +64,45 @@
         margin-bottom: 24px;
       }
 
+      // ratio styling
+      .radio {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+
+        input {
+          display: none;
+
+          &:checked {
+            + .radio_custom {
+              background-color: $input-checked-bg;
+              border-color: $input-checked-bg;
+            }
+          }
+        }
+
+        &_custom {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 2px solid $input-border-color;
+          background-color: #fff;
+          margin-right: 16px;
+          position: relative;
+
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        &_text {
+          display: flex;
+        }
+      }
+
       // checkbox styling
       .checkbox {
         display: flex;

@@ -496,6 +496,37 @@ footer .footer-contact-container p:not(:last-child) {
 .election-main .election-question-answer .question-container input {
   margin-bottom: 24px;
 }
+.election-main .election-question-answer .question-container .radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.election-main .election-question-answer .question-container .radio input {
+  display: none;
+}
+.election-main .election-question-answer .question-container .radio input:checked + .radio_custom {
+  background-color: #7541ee;
+  border-color: #7541ee;
+}
+.election-main .election-question-answer .question-container .radio_custom {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #bfc5c9;
+  background-color: #fff;
+  margin-right: 16px;
+  position: relative;
+}
+.election-main .election-question-answer .question-container .radio_custom svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.election-main .election-question-answer .question-container .radio_text {
+  display: flex;
+}
 .election-main .election-question-answer .question-container .checkbox {
   display: flex;
   align-items: center;
