@@ -681,6 +681,41 @@ footer .footer-contact-container p:not(:last-child) {
   background-color: #ffe86e;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .election-main h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .election-main h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 30px;
+  }
+  .election-main p {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+  .election-main .election-question-answer .question-container .election-question {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .election-main .election-question-answer .question-container input {
+    margin-bottom: 16px;
+  }
+  .election-main .voting-success-popup {
+    width: 70%;
+    padding: 24px;
+  }
+  .election-main .voting-success-popup .voting-success-txt h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .election-main button {
+    margin-top: 20px;
+  }
+}
 .about-project-container {
   width: 100%;
   height: 100%;

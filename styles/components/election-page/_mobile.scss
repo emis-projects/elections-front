@@ -1,0 +1,42 @@
+@media screen and (max-width: $tablet) {
+  .election-main {
+    h1 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 23.8px;
+    }
+
+    .election-question-answer {
+      .question-container {
+        .election-question {
+          font-size: 16px;
+          line-height: 26px;
+        }
+
+        input {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    .voting-success-popup {
+      width: 70%;
+      padding: 24px;
+      .voting-success-txt {
+        h5 {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+}
