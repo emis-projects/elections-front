@@ -1,0 +1,11 @@
+@media screen and (max-width: $tablet) {
+  footer {
+    h3 {
+      margin-bottom: 32px;
+    }
+    .footer-flex-container {
+      padding: 48px 24px;
+      flex-direction: column;
+    }
+  }
+}
