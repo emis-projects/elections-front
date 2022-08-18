@@ -68,6 +68,7 @@
       <h1>სკოლის თვითმმართველობის არჩევის წესის ცვლილება</h1>
       <p>პროექტი წარმოადგენს სამინისტროსა და რესურსცენტრის ელექტრონულ არჩევნების საიტს. ამ საიტის მეშვეობით მოსწავლეები და მასწავლებლები რეგისტრაციის შემდეგ.</p>
       <form action="/" class="election-question-answer">
+        <input type="hidden" name="device_id" id="device_id" />
         <div class="question-container question-radio">
           <div class="question-numbering">
             <span class="election-question-number"></span>
@@ -331,6 +332,8 @@
     <script>
       const DeviceID = new DeviceUUID().get();
       console.log(DeviceID);
+      const deviceIdInput = document.getElementById("device_id");
+      deviceIdInput.value = DeviceID;
     </script>
 
     <!-- script tags -->
