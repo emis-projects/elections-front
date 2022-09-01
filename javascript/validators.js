@@ -9,3 +9,5 @@ votingEndBtn.addEventListener("click", () => {
 votingCloseX.addEventListener("click", () => {
   votingSuccessPopup.style.display = "none";
 });
+
+const errormsg = document.querySelector(".same-user-error-message");

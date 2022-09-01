@@ -88,8 +88,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -165,19 +163,7 @@ table {
 
 @font-face {
   font-family: HelveticaNeue;
-  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ Medium\ Extended/medium.ttf);
-}
-@font-face {
-  font-family: HelveticaNeue-bold;
-  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 77\ Bd\ Cn\ Obl/bold.ttf);
-}
-@font-face {
-  font-family: HelveticaNeue-heavy;
-  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 87\ Hv\ Cn\ Obl/heavy.ttf);
-}
-@font-face {
-  font-family: HelveticaNeue-heavier;
-  src: url(../fonts/Helvetica-Neue-Font/Helvetica\ NeueLTW0693BlkExtObl/hevier);
+  src: url(../fonts/Helvetica-Neue-Font/HelveticaNeue.ttc);
 }
 header {
   width: 100%;
