@@ -317,6 +317,10 @@ header nav .header-user-container-popup-wrapper .header-user-popup .user-popup-l
 }
 
 .burger-menu-navbar {
+  display: none;
+}
+
+.show-burger-menu {
   width: 100%;
   height: 87px;
   position: absolute;
@@ -325,14 +329,18 @@ header nav .header-user-container-popup-wrapper .header-user-popup .user-popup-l
   margin: 0 auto;
   background-color: #fff !important;
   z-index: 1 !important;
+  display: block;
 }
-.burger-menu-navbar ul {
+.show-burger-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.burger-menu-navbar .burger-menu-navbar-shadow {
+.show-burger-menu ul li {
+  cursor: pointer;
+}
+.show-burger-menu .burger-menu-navbar-shadow {
   width: 100%;
   height: 100vh;
   overflow: hidden;

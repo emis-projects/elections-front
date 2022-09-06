@@ -3,11 +3,13 @@ const aboutPage = document.querySelectorAll(".about-project-container");
 const aboutPageX = document.querySelectorAll(".about-project-container-close-x");
 const wholeAboutPageContent = document.querySelectorAll(".about-project-container");
 const aboutPageChildContainer = document.querySelectorAll(".about-project-child-container");
+const burgerMenu = document.querySelector(".burger-menu-navbar");
 
 about.forEach(link => {
   link.addEventListener("click", () => {
     aboutPage.forEach(page => {
       page.style.display = "flex";
+      burgerMenu.className = "burger-menu-navbar";
     });
   });
 });
